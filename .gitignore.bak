@@ -1,2 +1,9 @@
 Library/
 Logs/
+obj/
+UserSettings/
+*.log
+*.log
+*.cache
+*.asset
+*.dwlt
