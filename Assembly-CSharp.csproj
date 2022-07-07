@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{70261382-45EB-0236-7EA2-855FCD841B8F}</ProjectGuid>
+    <ProjectGuid>{65E644B1-3287-6674-EC08-F5D5C91D6FCA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -94,7 +94,6 @@
     <Compile Include="Assets\Scripts\Components\Objects\Links\EnemyLink.cs" />
     <Compile Include="Assets\Scripts\Components\Common\Input\MoveKeyDownTag.cs" />
     <Compile Include="Assets\Scripts\Systems\InputSystems\KeyDownCheckSystem.cs" />
-    <Compile Include="Assets\Scripts\Components\Common\MonoLinks\PrefabsFactoryMonoLink.cs" />
     <Compile Include="Assets\Scripts\Components\GameStates\GameplayEvents\ScoreIncrementEvent.cs" />
     <Compile Include="Assets\Scripts\Systems\InterfaceSystems\InterfaceUpdateSystem.cs" />
     <Compile Include="Assets\Scripts\Components\Common\MonoLinks\LaserChargesMonoLink.cs" />

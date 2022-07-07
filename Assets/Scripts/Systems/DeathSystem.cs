@@ -6,6 +6,8 @@ sealed class DeathSystem : IEcsRunSystem
     // auto-injected fields.
     private readonly EcsWorld _world = null;
     private readonly EcsFilter<DeathEvent> filter = null;
+    private readonly EcsStartup startup = null;
+    private readonly StaticData staticData = null;
         
     void IEcsRunSystem.Run ()
     {
@@ -24,6 +26,9 @@ sealed class DeathSystem : IEcsRunSystem
 
     private void Death(int finalScore)
     {
-        EcsStartup.Instance.StopGame(finalScore);
+        var deathInterface = GameObject.Instantiate(staticData.deathInterfacePrefab);
+        deathInterface.GetComponent<DeathInterface>().AddScore(finalScore);
+        GameObject.Destroy(startup.SpawnedObjects.gameObject);
+        GameObject.Destroy(startup.gameObject); // TODO Здесь лучше сделать не уничтожение объекта startup, а отключение конкретных систем
     }
 }

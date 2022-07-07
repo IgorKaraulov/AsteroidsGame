@@ -6,6 +6,7 @@ sealed class InterfaceInitSystem : IEcsInitSystem
     // auto-injected fields.
     private readonly EcsWorld _world = null;
     private readonly StaticData staticData = null;
+    private readonly EcsStartup startup = null;
         
     public void Init ()
     {     
@@ -16,7 +17,7 @@ sealed class InterfaceInitSystem : IEcsInitSystem
             Rotation = Quaternion.identity,
             Count = 1
         };
-        GameObject gameObject = GameObject.Instantiate(prefab.Prefab, prefab.Position, prefab.Rotation, EcsStartup.Instance.SpawnedObjects);
+        GameObject gameObject = GameObject.Instantiate(prefab.Prefab, prefab.Position, prefab.Rotation, startup.SpawnedObjects);
         var monoEntity = gameObject.GetComponent<MonoEntity>();
         if (monoEntity == null)
             return;
