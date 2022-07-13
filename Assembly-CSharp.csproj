@@ -57,7 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Components\Common\LaserChargesComponent.cs" />
-    <Compile Include="Assets\Scripts\Systems\MoveSystems\AsteroidShardsMoveSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\CollisionSystems\BulletCollisionSystem.cs" />
     <Compile Include="Assets\Scripts\Components\Objects\Links\AsteroidShardLink.cs" />
     <Compile Include="Assets\Scripts\Systems\ScoreSystems\ScoreUpdateSystem.cs" />
@@ -82,7 +81,6 @@
     <Compile Include="Assets\Scripts\Components\Common\MonoLinks\EnemyMonoLink.cs" />
     <Compile Include="Assets\Scripts\UnityComponents\MonoLinks\Base\MonoLinkBase.cs" />
     <Compile Include="Assets\Scripts\UnityComponents\MonoLinks\UnityBaseComponents\RBMonoLink.cs" />
-    <Compile Include="Assets\Scripts\Components\Common\MonoLinks\AsteroidShardMonoLink.cs" />
     <Compile Include="Assets\Scripts\EcsStartup.cs" />
     <Compile Include="Assets\Scripts\UnityComponents\MonoLinks\Base\MonoEntity.cs" />
     <Compile Include="Assets\Scripts\Components\Common\MonoLinks\GameObjectLink.cs" />
@@ -125,7 +123,6 @@
     <Compile Include="Assets\Scripts\Systems\MoveSystems\PlayerMoveSystem.cs" />
     <Compile Include="Assets\Scripts\UnityComponents\MonoLinks\PhysicsLinks\OnTriggerEnterMonoLink.cs" />
     <Compile Include="Assets\Scripts\Components\Common\MonoLinks\InterfaceMonoLink.cs" />
-    <Compile Include="Assets\Scripts\Systems\CollisionSystems\AsteroidShardCollisionSystem.cs" />
     <Compile Include="Assets\Scripts\Components\GameStates\GameProgress.cs" />
     <Compile Include="Assets\Scripts\Components\Common\Input\BulletShotKeyDownTag.cs" />
     <Compile Include="Assets\Scripts\Systems\MoveSystems\ViewportBorderCrossSystem.cs" />

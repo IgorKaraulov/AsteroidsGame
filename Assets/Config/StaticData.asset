@@ -30,7 +30,7 @@ MonoBehaviour:
   asteroidShardSpeed: 0.03
   enemySpeed: 0.02
   timeEnemySpawn: 2
-  enemyCost: 1
+  enemyCost: 3
   bulletFlightSpeed: 30
   bulletShotColdown: 0.5
   laserShotColdown: 1

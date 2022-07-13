@@ -125,6 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c09a3321c6c3c47a483833f3cd30d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staticData: {fileID: 11400000, guid: c6944e0620d45004d9d4d0e2d1190aab, type: 2}
+  asteroidType: 0
 --- !u!114 &-3367328345616004860
 MonoBehaviour:
   m_ObjectHideFlags: 0

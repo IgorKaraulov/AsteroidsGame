@@ -149,7 +149,6 @@ using UnityEngine;
         moveSystems
             .Add(new PlayerMoveSystem())
             .Add(new BulletMoveSystem())
-            .Add(new AsteroidShardsMoveSystem())
             .Add(new AsteroidsMoveSystem())
             .Add(new EnemyMoveSystem())
             .Inject(staticData).
@@ -162,7 +161,6 @@ using UnityEngine;
         .Add(new AsteroidCollisionSystem())
         .Add(new BulletCollisionSystem())
         .Add(new EnemyCollisionSystem())
-        .Add(new AsteroidShardCollisionSystem())
         .Add(new PlayerTriggerSystem())
 
         .OneFrame<OnTriggerEnterEvent>()

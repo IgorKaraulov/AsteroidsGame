@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4084400360859246768}
   - component: {fileID: -3367328345616004860}
   - component: {fileID: 3135778089843735311}
-  - component: {fileID: -7869410869146886025}
+  - component: {fileID: 5780140452611217404}
   m_Layer: 0
   m_Name: AsteroidShardPrefab
   m_TagString: AsteroidShard
@@ -151,7 +151,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-7869410869146886025
+--- !u!114 &5780140452611217404
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,6 +160,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4870764519096771504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b315cef9bc430a4999e6556d9f1d919, type: 3}
+  m_Script: {fileID: 11500000, guid: f1c09a3321c6c3c47a483833f3cd30d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staticData: {fileID: 11400000, guid: c6944e0620d45004d9d4d0e2d1190aab, type: 2}
+  asteroidType: 1

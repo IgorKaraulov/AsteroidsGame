@@ -1,6 +1,7 @@
 using UnityEngine;
+using Leopotam.Ecs;
 
-struct AsteroidShardLink
+struct AsteroidShardLink: IEcsIgnoreInFilter
 {
-    public Vector3 pointToMove;
+   
 }

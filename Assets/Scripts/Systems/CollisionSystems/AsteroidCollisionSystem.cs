@@ -18,13 +18,14 @@ sealed class AsteroidCollisionSystem : IEcsRunSystem
         {
             ref var entity = ref filter.GetEntity(index);
             ref var collisionEvent = ref filter.Get2(index);
-            
+            ref var link = ref filter.Get1(index);
+
             entity.Get<ScoreIncrementEvent>() = new ScoreIncrementEvent
             {
-                value = staticData.asteroidCost
+                value = link.asteroidCost
             };
 
-            if (collisionEvent.collision.gameObject.tag == Constants.bulletTag)
+            if (collisionEvent.collision.gameObject.tag == Constants.bulletTag && !entity.Has<AsteroidShardLink>())
             {
                 foreach (var i in prefabFactoryFilter) 
                 {

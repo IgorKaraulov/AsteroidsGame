@@ -1,7 +1,7 @@
 using Leopotam.Ecs;
 using UnityEngine;
 
-sealed class AsteroidsMoveSystem : IEcsRunSystem
+sealed class AsteroidsMoveSystem  : IEcsRunSystem 
 {
     // auto-injected fields.
     private readonly EcsWorld _world = null;
@@ -12,10 +12,11 @@ sealed class AsteroidsMoveSystem : IEcsRunSystem
     {
         foreach (var index in filter)
         {
-            ref var point =  ref filter.Get1(index).pointToMove;
+            ref var link =  ref filter.Get1(index);
             ref var gameObject = ref filter.Get2(index).value;
+            var point = link.pointToMove;
 
-            gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, point, staticData.asteroidSpeed);
+            gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, point, link.asteroidSpeed);
 
             if (gameObject.transform.position == new Vector3(point.x,point.y)) //Удаление астероида при достижении конечной точки
             {
